@@ -7,8 +7,8 @@ WORKDIR /app
 # Copy the Python script to the container
 COPY truth_or_dare.py /app
 
-# Install any necessary dependencies (if needed)
-RUN pip install --no-cache-dir random
+# No additional dependencies are needed
 
 # Command to run the app
 CMD ["python", "truth_or_dare.py"]
+
